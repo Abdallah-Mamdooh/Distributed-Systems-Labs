@@ -1,0 +1,19 @@
+Docker Image Comparison:
+
+Basic image:
+- Built using Dockerfile.basic.
+- Size: 133MB.
+- It installs dependencies directly inside the final image.
+
+Multi-stage image:
+- Built using Dockerfile.multistage.
+- It uses a builder stage to install dependencies, then copies only the needed files to the final stage.
+
+Which image is smaller?
+In my result, the image sizes were close because the application is very small and both images use python:3.12-slim.
+
+Which steps are cached if only app.py changes?
+The requirements.txt copy step and pip install step are cached. Only the app.py copy step and the final CMD layer need to be rebuilt.
+
+Why does layer order matter?
+Layer order matters because Docker reuses cached layers. Stable files like requirements.txt should be copied before frequently changed files like app.py to make builds faster.

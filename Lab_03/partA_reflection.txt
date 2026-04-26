@@ -1,0 +1,7 @@
+Part A Reflection:
+
+Inside the container, the main bash process appears as PID 1.
+
+On the host machine, Docker shows the same bash process with a different PID.
+
+This happens because containers use PID namespaces. The PID namespace isolates process IDs, so the container has its own process view, while the host can still see the real process ID.
