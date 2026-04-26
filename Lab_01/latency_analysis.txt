@@ -1,0 +1,9 @@
+Latency Analysis:
+
+The average request time was 142.985 ms.
+The median latency was 87 ms.
+The 90th percentile latency was 269 ms.
+The 95th percentile latency was 318 ms.
+The 99th percentile latency was 489 ms.
+
+This shows tail latency because most requests were fast, but a small percentage of requests took much longer.
