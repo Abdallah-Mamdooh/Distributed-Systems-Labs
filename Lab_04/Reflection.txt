@@ -1,0 +1,21 @@
+Lab 4 Reflection
+
+1. Microservices Benefits:
+Microservices allow independent development, deployment, and scaling of services.
+
+2. Complexity:
+Splitting the system introduces communication between services and possible failures.
+
+3. Service Dependency:
+Order-service depends on product-service, so failure in one affects the other.
+
+4. Network Latency:
+High latency can slow down communication between services.
+
+5. 12-Factor Principles:
+- Use of environment variables
+- Stateless design
+- Port-based communication
+
+6. Failure Handling:
+When product-service is down, order-service returns an error, showing how failures propagate.

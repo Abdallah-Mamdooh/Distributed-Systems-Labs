@@ -1,0 +1,14 @@
+Lab 1 Reflection
+
+1. Latency Results:
+The latency varied depending on network conditions. Local requests were faster compared to remote ones.
+
+2. Observations:
+- Network delay affects performance significantly.
+- Repeated requests may benefit from caching.
+
+3. Learning:
+I understood how latency impacts system performance and how to measure it using tools.
+
+4. Conclusion:
+Latency is a key factor in distributed systems and must be considered in system design.

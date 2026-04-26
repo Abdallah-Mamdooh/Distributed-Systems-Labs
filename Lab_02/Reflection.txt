@@ -1,0 +1,16 @@
+Lab 2 Reflection
+
+1. Redis and etcd:
+Redis is used for fast in-memory storage, while etcd is used for distributed configuration and coordination.
+
+2. Replication:
+Replication helps improve availability and fault tolerance.
+
+3. Leader Election:
+Leader election ensures that only one node acts as the coordinator in a distributed system.
+
+4. Failover:
+Failover allows the system to continue working even if a node fails.
+
+5. Learning:
+This lab helped me understand distributed data systems and how they handle failures.

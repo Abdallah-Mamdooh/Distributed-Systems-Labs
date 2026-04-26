@@ -1,0 +1,19 @@
+Lab 3 Reflection
+
+1. Namespaces vs Cgroups:
+Namespaces isolate system resources, while cgroups control resource usage like CPU and memory.
+
+2. Docker Image Layering:
+Layering improves performance by reusing unchanged layers, reducing build time and storage.
+
+3. Kubernetes Desired State:
+Kubernetes ensures that the system always matches the desired configuration defined by the user.
+
+4. Self-healing:
+Kubernetes automatically replaces failed pods without manual intervention.
+
+5. Probes:
+Readiness probes check if the service is ready, while liveness probes check if it is still running correctly.
+
+6. Limitation:
+Using a single-node cluster does not fully represent real distributed environments.
