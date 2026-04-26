@@ -1,0 +1,7 @@
+Microservices Architecture Answer:
+
+Containers are better for microservices because they are lightweight, start quickly, and use fewer resources. 
+
+They also allow easy scaling and deployment, which is important for microservices where many small services run independently.
+
+VMs provide better isolation but are heavier and slower, making them less suitable for microservices compared to containers.
