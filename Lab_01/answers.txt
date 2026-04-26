@@ -1,0 +1,13 @@
+Comparison between VM and Container
+
+1. Startup Time:
+- The container starts almost instantly.
+- The VM (Kali) takes longer to boot because it runs a full operating system.
+
+2. Memory Usage:
+- The container uses less memory because it shares the host OS.
+- The VM consumes more memory since it runs its own OS.
+
+3. Process Count:
+- The container has fewer processes.
+- The VM has many background processes because it is a full system.
