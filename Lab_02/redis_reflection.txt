@@ -1,0 +1,7 @@
+Redis Replication Reflection:
+
+Redis replication worked successfully. I wrote a key on redis-node1 and read it from redis-node2.
+
+When redis-node2 was stopped, redis-node1 still accepted writes. After starting redis-node2 again, the new key was replicated successfully.
+
+This shows that Redis can provide availability during replica failure, but consistency may be delayed until the replica reconnects.
