@@ -1,0 +1,11 @@
+etcd / Raft Reflection:
+
+I used etcdctl to write and read a key-value pair successfully.
+
+The endpoint status command showed that the etcd node was the leader.
+
+When I stopped the etcd container, the service became unavailable because this setup used only one etcd node.
+
+After restarting etcd, the node became leader again and the Raft term increased from 2 to 3.
+
+In a real multi-node Raft cluster, if the leader fails, the remaining nodes elect a new leader automatically.
